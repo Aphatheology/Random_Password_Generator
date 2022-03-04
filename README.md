@@ -20,9 +20,7 @@ This is Solo Project from a Javascript course on Scrimba. Figma design of a Rand
 
 ### Links
 
-- Solution: [Solution Repository](https://github.com/Aphatheology/UnitConverter)
-
-- Live Site URL: [Unit Converter](https://aphatheology.github.io/UnitConverter/)
+- Live Site URL: [Random Password Generator](https://aphatheology.github.io/Random_Password_Generator/)
 
 ## My process
 
