@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter' , sans-serif;
+}
+
+/* body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+
+.container {
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    padding: 50px 25px 10px;
+    background-color: hsl(215, 28%, 17%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 75px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+h2 span {
+    color: hsl(144, 70%, 58%, 100%);
+}
+
+p {
+    color: rgb(210, 210, 210);
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+hr {
+    /* background-color: hsl(215, 28%, 25%); */
+    background-color: hsl(160, 84%, 39%);
+    border: none;
+    height: 2px;
+    width: 100%;
+    margin: 25px auto;
+}
+
+#generate {
+    background-color: hsl(160, 84%, 39%);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 223px;
+    height: 42px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.output {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 30px;
+    
+    flex-wrap: wrap;
+}
+
+.output button {
+    background-color: hsl(215, 30%, 22%);
+    color: hsl(142, 93%, 65%);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 211px;
+    height: 39px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.githublink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.githublink a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.githublink a:visited {
+    color: white;
+}
+
+.githublink img {
+    height: 16px;
+    width: 16px;
+}
+
+@media screen and (max-width: 550px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        overflow: hidden;
+        height: auto;
+    }
+
+    h2 {
+        margin: 20px auto;
+        line-height: 0.8;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    .output {
+        justify-content: center;
+    }
+}
