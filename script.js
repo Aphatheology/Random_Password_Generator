@@ -5,6 +5,9 @@ let pass1Button = document.getElementById('pass1')
 let pass2Button = document.getElementById('pass2')
 let pass3Button = document.getElementById('pass3')
 let pass4Button = document.getElementById('pass4')
+let errorMsg = document.getElementById('error-msg');
+
+let passwordLen = document.getElementById('password-length');
 
 
 
@@ -37,10 +40,20 @@ function generatePassword() {
 }
 
 function repeatRand() {
-    for (i = 0; i !== 8; i++) {
+    let passwordLength = passwordLen.value;
+
+    if(passwordLength === "" || passwordLength == 0) {
+        errorMsg.style.display = 'block';
+        passwordLength = 8;
+    } else {
+        errorMsg.style.display = 'none';
+        passwordLength = Number(passwordLen.value)
+    }
+    
+    
+    for (i = 0; i <= passwordLength; i++) {
         generatePassword();
-        
-        if(passlen1 === 8) {
+        if(passlen1 === passwordLength) {
             console.log(passArr1)
             console.log(passArr2)
             console.log(passArr3)
@@ -58,7 +71,9 @@ generateButton.addEventListener("click" ,
     function() {
         repeatRand();
         passArr1 = passArr2 = passArr3 = passArr4 = '';
+        // passwordLen.value = ''
     } 
+
 
 ) 
 

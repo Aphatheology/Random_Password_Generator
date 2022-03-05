@@ -9,11 +9,18 @@
 </head>
 <body>
     <div class="container">
-        <h2>Generate a <br> <span>random password</span></h2>
-        <p>Never use an insecure password again.</p>
+        
+            <h2>Generate a <br> <span>random password</span></h2>
+            <p>Never use an insecure password again.</p>
 
-        <button id="generate"><img src="Images/Iconlight.png" alt="">Generate passwords</button>
+        <div class="top">
+            <input type="number" value="" id="password-length" placeholder="Input Password Length">
+            <button id="generate"><img src="Images/Iconlight.png" alt="">Generate passwords</button>
 
+
+
+        </div>
+        <span id="error-msg">Since you did not input any length, default Password Length of 8 will be used.</span>
         <hr>
 
         <div class="output">
