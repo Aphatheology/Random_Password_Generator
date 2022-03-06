@@ -1,6 +1,5 @@
 # Random Password Generator
 
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -42,8 +41,8 @@ This is Solo Project from a Javascript course on Scrimba. Figma design was provi
 
 ### Continued development
 
-- I will work on the Light Mode and integrate it.
 - I will work on allowing user to specify their password range - **DONE!!! 💜💜💜**
+- I will work on allowing user copy and of the password generated.
 - I will work on making the project a PWA
 -If you have any suggestion on what to add, kindly send a message through the links below. Thanks
 
