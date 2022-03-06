@@ -42,10 +42,10 @@ This is Solo Project from a Javascript course on Scrimba. Figma design was provi
 
 ### Continued development
 
-I will work on the Light Mode and integrate it.
-I will work on allowing user to specify their password range - **DONE!!! 💜💜💜**
-I will work on making the project a PWA
-If you have any suggestion on what to add, kindly send a message through the links below. Thanks
+- I will work on the Light Mode and integrate it.
+- I will work on allowing user to specify their password range - **DONE!!! 💜💜💜**
+- I will work on making the project a PWA
+-If you have any suggestion on what to add, kindly send a message through the links below. Thanks
 
 ## Author
 
