@@ -1,25 +1,17 @@
 let generateButton = document.getElementById('generate');
-let allowedCharacter = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
-'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z', 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, '!', '#', '$', '%', '&', '(',')','*','+'];
 let pass1Button = document.getElementById('pass1')
 let pass2Button = document.getElementById('pass2')
 let pass3Button = document.getElementById('pass3')
 let pass4Button = document.getElementById('pass4')
 let errorMsg = document.getElementById('error-msg');
-
 let passwordLen = document.getElementById('password-length');
 
-
-
-// Get random Character from the allowedCharacter Array
-
-
+let allowedCharacter = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
+'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z', 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, '!', '#', '$', '%', '&', '(',')','*','+'];
 
 let passArr1 = passArr2 = passArr3 = passArr4 = ''; 
 let passlen1, passlen2, passlen3, passlen4;
 
-
-// let storepass = []
 
 function generatePassword() {
     let randomCh1 = Math.floor(Math.random() * 71);
@@ -50,6 +42,30 @@ function repeatRand() {
         passwordLength = Number(passwordLen.value)
     }
     
+    if (passwordLength > 12 && screen.width <= 550) {
+        errorMsg.style.display = 'block';
+        errorMsg.textContent = 'When you are not Putin, why putting such password length, omooooo. Anyway, here are your passwords!'
+        pass1Button.style.width = '100%';
+        pass2Button.style.width = '100%';
+        pass3Button.style.width = '100%';
+        pass4Button.style.width = '100%';
+    } 
+    
+    else if (passwordLength > 20 && screen.width > 550) {
+        errorMsg.style.display = 'block';
+        errorMsg.textContent = 'When you are not Putin, why putting such password length, omooooo. Anyway, here are your passwords!'
+        pass1Button.style.width = '100%';
+        pass2Button.style.width = '100%';
+        pass3Button.style.width = '100%';
+        pass4Button.style.width = '100%';
+    }
+    
+    else {
+        pass1Button.style.width = '48%';
+        pass2Button.style.width = '48%';
+        pass3Button.style.width = '48%';
+        pass4Button.style.width = '48%';
+    }
     
     for (i = 0; i <= passwordLength; i++) {
         generatePassword();
@@ -73,68 +89,4 @@ generateButton.addEventListener("click" ,
         passArr1 = passArr2 = passArr3 = passArr4 = '';
         // passwordLen.value = ''
     } 
-
-
 ) 
-
-
-    // for (j = 0; j !== 8; j++) {
-        // randomCh = Math.floor(Math.random() * 71);
-        // console.log(randomCh)
-        // passArr += allowedCharacter[randomCh];
-        // passlen = passArr.length;
-        // generatePassword();
-        // console.log(j)
-        // if(passlen === 8) {
-        //     console.log(passArr);
-        //     pass2Button.textContent = passArr
-        // }
-        
-    // }
-
-    
-    // function() {
-    //     for (i = 0; i !== 8; i++) {
-    //         generatePassword();
-    //         if(passlen === 8) {
-    //             console.log(passArr);
-    //             pass1Button.textContent = passArr
-    //         }
-            
-    //     }
-    // }
-
-// function passL() {
-//     for (i = 0; i !== 8; i++) {
-        
-//         generatePassword()
-//         // pass1Button.textContent = passArr        
-//     }
-    
-// }
-
-// if(storepass.length < 4) {
-//     console.log("Not yet there " + storepass.length)
-// }
-
-// generateButton.addEventListener('click' , 
-// function () {
-//     // for (i = 0; i !== 8; i++) {
-        
-//     //     generatePassword()
-//     //     // pass1Button.textContent = passArr        
-//     // }
-//     generatePassword()
-    
-    
-//     if(passlen === 8) {
-//         storepass.push(passArr)
-//         pass1Button.textContent = storepass[0]
-//         pass2Button.textContent = storepass[0]
-//         pass3Button.textContent = storepass[0]
-//         pass4Button.textContent = storepass[0]
-//         console.log(storepass[0])
-//     }
-    
-// }
-// )

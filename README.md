@@ -1,6 +1,5 @@
-# Scrimba Solo Project - Random Password Generator
+# Random Password Generator
 
-This is a solution to the [Random Password Generator Project by Scrimba](https://scrimba.com/learn/learnjavascript/).
 
 ## Table of contents
 
@@ -14,7 +13,7 @@ This is a solution to the [Random Password Generator Project by Scrimba](https:/
 
 
 ## Overview
-This is Solo Project from a Javascript course on Scrimba. Figma design of a Random Password Generator is given which is to be implemented.
+This is Solo Project from a Javascript course on Scrimba. Figma design was provided.
 
 
 
@@ -32,6 +31,7 @@ This is Solo Project from a Javascript course on Scrimba. Figma design of a Rand
 
 ### What I learned
 
+- While working on this project, I create an infinite loop that made me force shutdown my system. I learned to be careful with my Loops.
 - How to style the hr tag.
 - In my last project [Unit Converter](https://aphatheology.github.io/UnitConverter/), all colors and background colors stated in hsl were not working, Chrome is giving an error of invalid color code (I resolved to using their rgb equivalent). I learnt the cause of that in this project. 
   hsl(hue, saturation, lightness)
@@ -43,7 +43,7 @@ This is Solo Project from a Javascript course on Scrimba. Figma design of a Rand
 ### Continued development
 
 I will work on the Light Mode and integrate it.
-I will work on allowing user to specify their password range
+I will work on allowing user to specify their password range - **DONE!!! 💜💜💜**
 I will work on making the project a PWA
 If you have any suggestion on what to add, kindly send a message through the links below. Thanks
 
