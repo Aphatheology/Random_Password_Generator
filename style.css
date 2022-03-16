@@ -7,16 +7,8 @@
     font-family: 'Inter' , sans-serif;
 }
 
-/* body {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-} */
-
 .container {
     width: 550px;
-    /* height: 550px; */
     position: absolute;
     left: 50%;
     top: 50%;
@@ -26,7 +18,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
 h2 {
@@ -55,7 +46,6 @@ p {
 }
 
 hr {
-    /* background-color: hsl(215, 28%, 25%); */
     background-color: hsl(160, 84%, 39%);
     border: none;
     height: 2px;
@@ -63,7 +53,7 @@ hr {
     margin: 25px auto;
 }
 
-#error-msg {
+#error-msg , #copy-password {
     color: red;
     background-color: white;
     padding: 3px;
@@ -78,7 +68,6 @@ input {
     outline: none;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
@@ -102,13 +91,13 @@ input {
     justify-content: center;
     column-gap: 10px;
     align-items: center;
+    cursor: pointer;
 }
 
 .output {
     display: flex;
     justify-content: space-between;
     row-gap: 30px;
-    
     flex-wrap: wrap;
 }
 
@@ -125,7 +114,7 @@ input {
     font-weight: normal;
     overflow-wrap: break-word;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -157,8 +146,11 @@ input {
         justify-content: center;
         align-items: center;
         width: 100vw;
-        height: 100vh;
         overflow: hidden;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translate(0 , 0);
     }
 
     h2 {
