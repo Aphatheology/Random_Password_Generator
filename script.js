@@ -107,7 +107,8 @@ generateButton.addEventListener("click" ,
         pass2Button.style.cursor = 'pointer';
         pass3Button.style.cursor = 'pointer';
         pass4Button.style.cursor = 'pointer';
-        copyPassword.style.display = 'none'
+        copyPassword.style.display = 'block'
+        copyPassword.innerText = 'Click on any of the password to copy it.'
         passArr1 = passArr2 = passArr3 = passArr4 = '';
 
         
