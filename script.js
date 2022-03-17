@@ -78,8 +78,13 @@ pass1Button.addEventListener('click' , function() {
     // pass1Button.select();
     // pass1Button.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(pass1Button.textContent);
+    // if (screen.width >= 550) {
+    //     copyPassword.style.display = 'block';
+    //     copyPassword.innerText = 'Password1 Copied'
+    // }
     copyPassword.style.display = 'block';
     copyPassword.innerText = 'Password1 Copied'
+    
 })
 
 pass2Button.addEventListener('click' , function() {
@@ -107,8 +112,12 @@ generateButton.addEventListener("click" ,
         pass2Button.style.cursor = 'pointer';
         pass3Button.style.cursor = 'pointer';
         pass4Button.style.cursor = 'pointer';
-        copyPassword.style.display = 'block'
-        copyPassword.innerText = 'Click on any of the password to copy it.'
+        if (screen.width >= 550) {
+            copyPassword.style.display = 'block';
+            copyPassword.innerText = 'Click on any of the password to copy it.'
+        }
+        // copyPassword.style.display = 'block'
+        // copyPassword.innerText = 'Click on any of the password to copy it.'
         passArr1 = passArr2 = passArr3 = passArr4 = '';
 
         
