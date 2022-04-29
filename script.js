@@ -30,9 +30,6 @@ minusCounter.addEventListener('click', () => {
     counter.textContent = Number(counter.textContent) - 1;
 })
 
-if(counter.textContent == 8) {
-    console.log('minimum')
-}
 let allowedCharacter = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z', 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, '!', '#', '$', '%', '&', '(',')','*','+'];
 
@@ -59,19 +56,19 @@ function generatePassword() {
 }
 
 function repeatRand() {
-    let passwordLength = passwordLen.value;
+    let passwordLength = Number(counter.textContent);
+    
 
     if(passwordLength === "" || passwordLength == 0 || passwordLength < 0 || passwordLength < 8) {
         errorMsg.style.display = 'block';
         errorMsg.innerText = 'Since you did not input any valid/strong length, default Password Length of 8 will be used.';
         passwordLength = 8;
     } else if (passwordLength <= 15) {
-        passwordLength = Number(passwordLen.value);
+        passwordLength = Number(counter.textContent);
         errorMsg.style.display = 'none';
     } else {
         errorMsg.style.display = 'block';
-        errorMsg.innerText = 'When you are not Putin, why putting such password length? Omooooo. Anyway, Password length of 15 will be used!';
-        passwordLength = 15;
+        errorMsg.innerText = 'When you are not Putin, why putting such password length? Omooooo.';
     }
     
     if (passwordLength > 12 && screen.width <= 550) {
