@@ -5,8 +5,34 @@ let pass3Button = document.getElementById('pass3')
 let pass4Button = document.getElementById('pass4')
 let errorMsg = document.getElementById('error-msg');
 let passwordLen = document.getElementById('password-length');
-let copyPassword = document.getElementById('copy-password')
+let copyPassword = document.getElementById('copy-password');
+let minusCounter = document.querySelector('.minus');
+let addCounter = document.querySelector('.add');
+let counter = document.querySelector('.count');
 
+// console.log(typeof counter)
+addCounter.addEventListener('click', () => {
+    if(counter.textContent >= 8 && counter.textContent <= 19) {
+        minusCounter.disabled = false;
+        counter.textContent = Number(counter.textContent) + 1;
+    } else if (counter.textContent ==  20) {
+        addCounter.disabled = true;
+    }
+})
+minusCounter.addEventListener('click', () => {
+    addCounter.disabled = false;
+    if(counter.textContent == 8) {
+        
+        minusCounter.disabled = true;
+        return;
+    }
+    minusCounter.disabled = false;
+    counter.textContent = Number(counter.textContent) - 1;
+})
+
+if(counter.textContent == 8) {
+    console.log('minimum')
+}
 let allowedCharacter = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z', 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, '!', '#', '$', '%', '&', '(',')','*','+'];
 
